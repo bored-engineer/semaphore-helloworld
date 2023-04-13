@@ -5,9 +5,11 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 blocks:
-  - name: 'Block #1'
+  - name: 'Block #123'
     task:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - uname -a
+            - echo $SEMAPHORE_GIT_REF_TYPE
+            - echo $SEMAPHORE_GIT_REF
