@@ -10,4 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - uname -a
+            - echo $SEMAPHORE_GIT_REF_TYPE
+            - echo $SEMAPHORE_GIT_REF
