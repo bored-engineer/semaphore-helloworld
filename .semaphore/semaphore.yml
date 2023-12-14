@@ -10,4 +10,5 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - sem-version go 1.21
+            - go version
