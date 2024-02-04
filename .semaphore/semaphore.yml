@@ -12,3 +12,4 @@ blocks:
           commands:
             - sem-version go 1.21
             - go version
+            - echo $SEMAPHORE_OIDC_TOKEN
