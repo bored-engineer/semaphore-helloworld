@@ -10,6 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - sem-version go 1.21
+            - sem-version go 1.21.3
             - go version
             - echo $SEMAPHORE_OIDC_TOKEN
