@@ -5,10 +5,10 @@ agent:
     type: e1-standard-2
     os_image: ubuntu2004
 blocks:
-  - name: 'Block #1'
+  - name: 'Block #1337'
     task:
       jobs:
-        - name: 'Job #1'
+        - name: 'Job #1337'
           commands:
             - sem-version go 1.21.4
             - go version
