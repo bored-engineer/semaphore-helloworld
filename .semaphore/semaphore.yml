@@ -12,5 +12,6 @@ blocks:
           commands:
             - uname -a
             - env
+            - id
             - echo $SEMAPHORE_GIT_REF_TYPE
             - echo $SEMAPHORE_GIT_REF
