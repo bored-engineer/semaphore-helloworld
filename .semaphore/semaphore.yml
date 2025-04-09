@@ -10,6 +10,5 @@ blocks:
       jobs:
         - name: 'Job #1337'
           commands:
-            - sem-version go 1.21.4
-            - go version
-            - echo $SEMAPHORE_OIDC_TOKEN
+            - uname -a && id -a
+            - echo "$SEMAPHORE_OIDC_TOKEN" | cut -d. -f2 | base64 -di -
